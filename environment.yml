@@ -1,0 +1,21 @@
+# Updated by: Faheem Faheem
+# Updated on: 2024-07-12
+# command to create new conda from an environment.yml file
+# conda env create -f environment.yml 
+
+# To update an existing conda environment with a updated environment.yml file, run the following command
+# conda env update -- geminiwave_unrar --file environment.yml --prune
+name: geminiwave_unrar
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - tk
+  - rarfile
+  - pip
+  - pip:
+      - pyinstaller
+      - pywin32
+
+
