@@ -4,7 +4,7 @@ GeminiWave Unrar is a simple Python script to extract RAR files using a GUI file
 
 ## Features
 
-- Extract RAR files using `unrar`
+- Extract RAR files using `unrar` and 'unzip'
 - Simple GUI for selecting RAR files and extraction directory
 - Easy setup and packaging into an executable
 - Script for creating a desktop shortcut
