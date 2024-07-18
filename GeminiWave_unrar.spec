@@ -1,12 +1,11 @@
 # -*- mode: python ; coding: utf-8 -*-
 
-
 a = Analysis(
-    ['GeminiWave_unrar.py'],
+    ['GeminiWave_unrar.py'],  # Ensure this matches the name of your updated Python file
     pathex=[],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=['rarfile', 'zipfile', 'tkinter'],  # Include any libraries not auto-detected
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -22,7 +21,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='GeminiWave_unrar',
+    name='GeminiWave_unrar',  # Ensure this matches the desired name for your executable
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
